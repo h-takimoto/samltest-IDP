@@ -27,7 +27,7 @@ $config = [
      * external url, no matter where you come from (direct access or via the
      * reverse proxy).
      */
-    'baseurlpath' => '/',
+    'baseurlpath' => 'simplesaml/',
 
     /*
      * The 'application' configuration array groups a set configuration options
@@ -138,7 +138,7 @@ $config = [
      * metadata listing and diagnostics pages.
      * You can also put a hash here; run "bin/pwgen.php" to generate one.
      */
-    'auth.adminpassword' => 'AOProto',
+    'auth.adminpassword' => '123',
 
     /*
      * Set this options to true if you want to require administrator password to access the web interface
@@ -462,7 +462,7 @@ $config = [
      *
      * Note that shib13-idp has been deprecated and will be removed in SimpleSAMLphp 2.0.
      */
-    'enable.saml20-idp' => true,
+    'enable.saml20-idp' => false,
     'enable.shib13-idp' => false,
     'enable.adfs-idp' => false,
 
@@ -496,7 +496,7 @@ $config = [
      */
 
      'module.enable' => [
-         'exampleauth' => true,
+         'exampleauth' => false,
          'core' => true,
          'saml' => true
      ],
