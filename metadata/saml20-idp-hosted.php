@@ -15,8 +15,8 @@ $metadata['__DYNAMIC:1__'] = [
     'host' => '__DEFAULT__',
 
     // X.509 key and certificate. Relative to the cert directory.
-    'privatekey' => 'server.pem',
-    'certificate' => 'server.crt',
+    'privatekey' => 'saml-server.pem',
+    'certificate' => 'saml-server.crt',
 
     /*
      * Authentication source to use. Must be one that is configured in
@@ -25,13 +25,13 @@ $metadata['__DYNAMIC:1__'] = [
     'auth' => 'example-userpass',
 
     /* Uncomment the following to use the uri NameFormat on attributes. */
-    /*
+    
     'attributes.NameFormat' => 'urn:oasis:names:tc:SAML:2.0:attrname-format:uri',
     'authproc' => [
         // Convert LDAP names to oids.
         100 => ['class' => 'core:AttributeMap', 'name2oid'],
     ],
-    */
+    
 
     /*
      * Uncomment the following to specify the registration information in the
